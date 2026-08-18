@@ -237,7 +237,7 @@ function PathCard({ title, color, data, scaleMax, showKeihi, winner }) {
         <span className="net-num">{man(data.net)}</span>
         <span className="net-man">万円 / 年</span>
       </div>
-      <div className="net-month">月あたり {yen(data.net / 12)}</div>
+      <div className="net-month">1ヶ月あたりの手取り額 {yen(data.net / 12)}</div>
       <StackBar segments={segments} scaleMax={scaleMax} pathColor={color} />
       <ul className="rows">
         <li><span>社会保険</span><b>{yen(data.social)}</b></li>
