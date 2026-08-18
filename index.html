@@ -449,14 +449,14 @@ const css = `
 
 .breakeven {
   background:var(--ink); color:#fff; border-radius:16px; padding:22px 24px;
-  display:flex; align-items:center; gap:24px;
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:20px 28px;
 }
-.be-content { flex:1; text-align:center; }
+.be-content { flex:1 1 260px; text-align:center; }
 .be-label { font-size:12px; letter-spacing:.1em; color:#B7C4BD; margin-bottom:8px; }
 .be-num { font-size:20px; font-weight:500; }
 .be-num strong { font-size:34px; color:#8FD0BF; margin:0 4px; }
 .be-sub { font-size:12.5px; color:#C2CDC7; margin:12px auto 0; max-width:46ch; line-height:1.7; }
-.be-img { width:180px; flex-shrink:0; border-radius:12px; }
+.be-img { width:360px; max-width:100%; flex-shrink:0; border-radius:12px; }
 
 .assume-btn {
   margin:20px auto 0; display:block; background:none; border:none; color:var(--muted);
@@ -477,8 +477,6 @@ const css = `
   .hero h1 { font-size:25px; }
   .results { grid-template-columns:1fr; }
   .net-num { font-size:36px; }
-  .breakeven { flex-direction:column; }
-  .be-img { width:100%; max-width:220px; }
 }
 `;
 
