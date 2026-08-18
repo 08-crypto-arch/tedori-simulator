@@ -333,8 +333,9 @@ function App() {
             売上 <strong>{man(breakeven)}</strong> 万円
           </div>
           <p className="be-sub">
-            経費 {man(keihi)}万円のとき、フリーランスでこの売上を出せば正社員 {man(salary)}万円（手取り {man(emp.net)}万円）に並びます。
-            経費を増やすほど、必要な売上も上がります。
+            ※経費 {man(keihi)}万円のとき、フリーランスでこの売上を出せば正社員 {man(salary)}万円（手取り {man(emp.net)}万円）に並びます。
+            <br />
+            ※ 経費を増やすほど、必要な売上も上がります。
           </p>
         </div>
         <img className="be-img" src={FLOW_IMG} alt="売上から経費・税金と社会保険料を差し引くと手取りになる、という計算の流れを示す図" />
@@ -452,7 +453,7 @@ const css = `
   display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:20px 28px;
 }
 .be-content { flex:1 1 260px; text-align:center; }
-.be-label { font-size:12px; letter-spacing:.1em; color:#B7C4BD; margin-bottom:8px; }
+.be-label { font-size:12px; letter-spacing:.1em; color:#fff; font-weight:700; margin-bottom:8px; }
 .be-num { font-size:20px; font-weight:500; }
 .be-num strong { font-size:34px; color:#8FD0BF; margin:0 4px; }
 .be-sub { font-size:12.5px; color:#C2CDC7; margin:12px auto 0; max-width:46ch; line-height:1.7; }
